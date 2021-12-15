@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+ <head>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Mercado Venatus</title>
+<style>
+ .mySlides {display:none;}
+#socials{
+background-color: black;
+width: 100%;
+}
+#b{ 
+text-align: center;
+color: red;
+background-color: Yellow; 
+}
+#a{
+color: black;
+text-style: italic;
+}#hi{
+display: none;
+}
+#12:checked~hi{
+display: block;
+}
+#pos{
+position: absolute;
+color:white;
+right: 25px;
+}
+#panel , #flip{
+text-align: center;
+background-color: white;
+border: solid black 2px;
+} #panel{
+padding : 10px;
+display: none;
+}
+#a.active{
+background:red;
+}
+#game{position: absolute;
+left: 555px;
+top:-8px;
+color:red;
+}
+#out{
+outline: 3px solid yellow;
+}
+.dropbtn {
+background-color:white;
+color: black;
+padding: 16px;
+font-size: 12px;
+border: none;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+left:90px;
+top:8px;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-size: 12px;
+}
+.dropdown-content a:hover {color: red; transform: scale(1.1); }
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {color: red;}
+#ho{
+font-size: 12px;
+position:relative;
+left:65px;
+top:8px;
+}
+#ho:hover{
+color: red
+}#tdr{
+font-size: 12px;
+position:relative;
+left:105px;
+top:8px;
+}
+#tdr:hover{
+color: red
+}
+#log{
+position:relative;
+left:305px;
+top:8px;
+}
+#abo{
+position:relative;
+right:-900px;
+top:8px;
+font-size: 12px;
+}
+#ab{
+position:relative;
+right:-750px;
+top:8px;
+font-size: 12px;
+}#i{
+position:absolute;
+top:800px;
+left:800px;
+}
+#im{
+position:absolute;
+top:800px;
+left:250px;
+}
+#text2 {
+ font-size: 14px;
+ position:absolute;
+ top:1100px;
+ left:800px;
+}
+#text {
+ font-size: 14px;
+ position:absolute;
+ top:1100px;
+ left:250px;
+}#con{
+position:absolute;
+top:700px;
+color:aqua;
+left: 555px;
+}
+#i1{
+position:absolute;
+top:1200px;
+left:250px;
+}
+#i2{
+position:absolute;
+top:1200px;
+left:800px;
+}
+#text3 {
+ font-size: 16px;
+ position:absolute;
+ top:1500px;
+ left:250px;
+}
+#text4{
+ font-size: 16px; position:absolute;
+ top:1500px;
+ left:800px;
+}
+#pc{
+position:absolute;
+top:1150px;
+color:aqua;
+left: 555px;
+}
+#i3{
+position:absolute;
+top:1650px;
+left:250px;
+}
+#i4{
+position:absolute;
+top:1750px;
+left:750px;
+}
+#text5 {
+ font-size: 14px;
+ position:absolute;
+ top:1950px;
+ left:250px;
+}#text6 {
+ font-size: 14px;
+ position:absolute;
+ top:1950px;
+ left:800px;
+}
+#GA{
+position:absolute;
+top:1600px;
+color:aqua;
+left: 555px;
+}
+#i5{
+position:absolute;
+top:2200px;
+left:250px;
+}
+#i6{
+position:absolute;
+top:2200px;
+left:750px;
+}
+#text7 {
+ font-size: 14px; position:absolute;
+ top:2500px;
+ left:250px;
+}
+#text8 {
+ font-size: 14px;
+ position:absolute;
+ top:2500px;
+ left:800px;
+}
+#P{
+position:absolute;
+top:2100px;
+color:aqua;
+left: 555px;
+}
+#i7{
+position:absolute;
+top:2650px;
+left:250px;
+}
+#i8{
+position:absolute;
+top:2650px;
+left:750px;
+}#text9 {
+ font-size: 14px;
+ position:absolute;
+ top:2950px;
+ left:250px;
+}
+#text10 {
+ font-size: 14px;
+ position:absolute;
+ top:2950px;
+ left:800px;
+}
+#M{
+position:absolute;
+top:2600px;
+color:aqua;
+left: 555px;
+}
+#i9{
+position:absolute;
+top:3250px;
+left:250px;
+}
+#i10{
+position:absolute;top:3250px;
+left:750px;
+}
+#text11 {
+ font-size: 14px;
+ position:absolute;
+ top:3550px;
+ left:250px;
+}
+#text12 {
+ font-size: 14px;
+ position:absolute;
+ top:3550px;
+ left:800px;
+}
+#PS{
+position:absolute;
+top:3150px;
+color:aqua;
+left: 555px;
+}
+ </style>
+</head>
+<body><div style = "background-color:#150e56; width:100%;" id = "diiv">
+<table height = "60px"><tr><td>
+<a href = "https://www.youtube.com/channel/UCo4dyPom3YXbyfZcVR6hkHQ" target = "_blank"><img 
+src = "E:\2nd sem\Website\Source for website\download.png" width = 60px height = 30px></a>
+</td><td><img src = "E:\2nd sem\Website\Source for website\twitter.png" width = 50px height = 30px>
+</td><td><a href = "https://www.instagram.com/sk_technical_gamerz/" target = "_blank"><img src = 
+"E:\2nd sem\Website\Source for website\unnamed.png" width = 40px height = 30px></a>
+</td><td><a href = "https://www.facebook.com/SAKSHAMSKtechnicalGamerz" target = "_blank"><img 
+src = "E:\2nd sem\Website\Source for website\fb.png" width = 40px height = 30px></a>
+<td id = "pos"><a href = "file:///E:\2nd sem\Website/form.html" target = "_blank"><h4>My 
+Account</h4></a></td>
+<td id = "game"><h1 id = "out"><b><i>Mercado Venatus</i></b></h1></td></tr></table>
+</div>
+<table>
+<tr>
+<td id = "ho">
+<a href = "file:///E:\2nd sem\Website/My%20Own%20website.html">HOME</a>
+</td>
+<td>
+ <div class="dropdown">
+<button class="dropbtn">CATEGORIES</button>
+<div class="dropdown-content">
+<a href="file:///E:\2nd sem\Website/content.html" target = "_blank">Gaming Consoles</a>
+<a href="file:///E:\2nd sem\Website/gaming%20pc.html" target = "_blank">Gaming PC</a>
+<a href="file:///E:\2nd sem\Website/gaming%20accesories.html" target = "_blank">Gaming Accessories</a>
+<a href="file:///E:\2nd sem\Website/accesories.html" target = "_blank">Processor</a>
+<a href="file:///E:\2nd sem\Website/motherboard.html" target = "_blank">Motherboard</a>
+<a href="file:///E:\2nd sem\Website/powersupply.html" target = "_blank">PSU</a>
+</div>
+</div><td id = "tdr">TRACK YOUR ORDER</td>
+</td>
+<td id = "log"><a href = "file:///E:\2nd sem\Website/My%20Own%20website.html"><img src = "E:\2nd sem\Website\Source for website\360.jpg" height = "40px" width= "100px"></a></td>
+<td id = "abo"><a>About</a></td>
+<td id = "ab"><a href = "file:///E:\2nd sem\Website/contactus.html?firstname=&lastname=&subject=">Contact Us</a></td>
+</tr>
+</table>
+<div class="w3-content w3-section" >
+<img class="mySlides" src="E:\2nd sem\Website\Source for website\bb.jpg" style="width:100%">
+<img class="mySlides" src="E:\2nd sem\Website\Source for website\aa.jpg" style="width:100%">
+<img class="mySlides" src= "E:\2nd sem\Website\Source for website\Untitled.png" style="width:100%">
+</div>
+<hr color = "blue">
+<h1 id = "con"><a href = "file:///E:\2nd sem\Website/content.html" target = "_blank">Consoles</a></h1><table>
+<tr>
+<td id="i"><img src="E:\2nd sem\Website\Source for website\ps5.0.jfif" alt="" height = "300px" width = "300px"/></td> 
+<td><p id = "text2">New Gen Gaming Console</p></td>
+<td id="im"><img src="E:\2nd sem\Website\Source for website\xboxseriesxconsole.jpg" alt="" height = "300px" width = 
+"300px"/></td> <td><p id = "text">XBox Series X</p></td>
+</tr>
+</table>
+<h1 id = "pc"><a href = "file:///E:\2nd sem\Website/gaming%20pc.html" target = "_blank">Pre Built PC</a></h1>
+<table>
+<tr>
+<td id = "i1"><img src = "E:\2nd sem\Website\Source for website\beast.jpg" height = "300px" width = "300px"></td><td id 
+="text3">Beast Gaming PC<hr>Rs130,000.00 inc.gst</td>
+<td id = "i2"><img src = "E:\2nd sem\Website\Source for website\intel-i3-pc.jpg" height = "300px" width = 
+"300px"></td><td id ="text4">Budget Gaming PC<hr>Rs61,000.00 inc.gst</td>
+</tr>
+</table>
+</table>
+<h1 id = "GA"><a href = "file:///E:\2nd sem\Website/gaming%20accesories.html" target = "_blank">Gaming 
+Accesories</a></h1>
+<table>
+<tr>
+<td id = "i3"><img src = "E:\2nd sem\Website\Source for website\mo.jpg" height = "300px" width = "300px"></td><td id 
+="text5">Cosmic Byte Hydra RGB <hr>Gaming Mouse<hr>Rs899.00 inc.gst</td>
+<td id = "i4"><img src = "E:\2nd sem\Website\Source for website\m.jpeg" height = "150px" width = "300px"></td><td id 
+="text6">Ant Esport KM540 Gaming <hr>Backlite Keyboard<hr>Rs1,449.00 inc.gst</td>
+</tr>
+</table>
+<h1 id = "P"><a href = "file:///E:\2nd sem\Website/accesories.html" target = "_blank">Processors</a></h1><table id ="tab1">
+<tr>
+<td id = "i5"><img src = "E:\2nd sem\Website\Source for website\333.jpg" height = "250px" width = "250px"></td><td id 
+="text7">AMD Ryzen 3 3300X Proccessor<hr>Rs15,500.00 inc.gst</td>
+<td id = "i6"><img src = "E:\2nd sem\Website\Source for website\535.jpg" height = "250px" width = "250px"></td><td id 
+="text8">AMD Ryzen 5 3600 Proccessor<hr>Rs17,999.00 inc.gst</td>
+</tr>
+</table>
+<h1 id = "M"><a href = "file:///E:\2nd sem\Website/motherboard.html" target = 
+"_blank">Motherboards</a></h1>
+<taBle id ="taB1">
+<tr>
+<td id = "i7"><img src = "E:\2nd sem\Website\Source for website\m1.jpg" height = "250px" width = "250px"></td><td id 
+="text9">MSI B365M Pro VH <hr>MotherBoard<hr>Rs6,050.00 inc.gst</td>
+<td id = "i8"><img src = "E:\2nd sem\Website\Source for website\m2.jpg" height = "250px" width = "250px"></td><td id 
+="text10">MSI B450 Tomhawk Max <hr>MotherBoard<hr>Rs10,299.00 inc.gst</td>
+</tr>
+</table>
+<h1 id = "PS"><a href = "file:///E:\2nd sem\Website/powersupply.html" target = "_blank">Power 
+Supply</a></h1>
+<taBle id ="taB1">
+<tr>
+<td id = "i9"><img src = "E:\2nd sem\Website\Source for website\p1.jpg" height = "250px" width = "250px"></td><td id 
+="text11">MSI B365M Pro VH <hr>MotherBoard<hr>Rs6,050.00 inc.gst</td>
+<td id = "i10"><img src = "E:\2nd sem\Website\Source for website\p2.jpg" height = "250px" width = "250px"></td><td id 
+="text12">MSI B450 Tomhawk Max <hr>MotherBoard<hr>Rs10,299.00 inc.gst</td>
+</tr>
+</taBle>
+<script src="E:\jquery-3.5.1.js"></script>
+<script>
+ var myIndex = 0;
+carousel();function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none"; 
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1} 
+x[myIndex-1].style.display = "block"; 
+setTimeout(carousel, 4000);
+}
+</script>
+ 
+ </body>
+</html
